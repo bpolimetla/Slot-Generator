@@ -155,7 +155,7 @@ public class Main2 {
 		System.out.println("APT,day1,day2,day3,day4,day5,day6,day7");
 		for (int unit = 0; unit < TOTAL_APARTMENTS; unit++) { // 20
 			String line;
-			line = APT_NAMES_ODD[day1[unit][0] - 1] + "," + SLOT_NAMES[day1[unit][1] - 1] + ",";
+			line = APT_NAMES_EVEN[day1[unit][0] - 1] + "," + SLOT_NAMES[day1[unit][1] - 1] + ",";
 			line = line + SLOT_NAMES[day2[unit][1] - 1] + ",";
 			line = line + SLOT_NAMES[day3[unit][1] - 1] + ",";
 			line = line + SLOT_NAMES[day4[unit][1] - 1] + ",";
