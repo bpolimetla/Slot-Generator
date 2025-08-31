@@ -7,7 +7,8 @@ import java.util.List;
 
 /**
  * Problem: Supermarket opens from 7 AM to 5 PM. Total 720 Apartments Provide
- * slot to each unit to visit supermarket
+ * slot to each unit to visit supermarket. This program prints data for Odd and
+ * Even apartments separately.
  * 
  * Assumptions: Only 50% or less will come to shop on daily basis. Few unit may
  * be vacant.
@@ -18,7 +19,7 @@ import java.util.List;
  * @since May-06-2020
  *
  */
-public class Main2 {
+public class SlotGeneratorOddEvenDays {
 
 	// Considering all unit irrespective of vacant or not.
 	public static final int TOTAL_APARTMENTS = 364;
@@ -280,10 +281,7 @@ public class Main2 {
 		for (int i = 1; i <= 364; i++) {
 			apartments[i - 1] = Integer.valueOf(i);
 		}
-		List<Integer> intList = Arrays.asList(apartments);
-		Collections.shuffle(intList);
-		intList.toArray(apartments);
-		apartments = intList.toArray(apartments);
+		apartments = shuffle(apartments);
 
 		for (int i = 1; i <= 52; i++) {
 			apt_g1[i - 1] = apartments[i - 1];
@@ -351,7 +349,8 @@ public class Main2 {
 			"H 1801", "H 1803", "H 1901", "H 1903", "I G1", "I G3", "I 101", "I 103", "I 201", "I 203", "I 301",
 			"I 303", "I 401", "I 403", "I 501", "I 503", "I 601", "I 603", "I 701", "I 703", "I 801", "I 803", "I 901",
 			"I 903", "I 1001", "I 1003", "I 1101", "I 1103", "I 1201", "I 1203", "I 1301", "I 1303", "I 1401", "I 1403",
-			"I 1501", "I 1503", "I 1601", "I 1603", "I 1701", "I 1703", "I 1801", "I 1803", "I 1901", "I 1903","delete","delete","delete","delete" };
+			"I 1501", "I 1503", "I 1601", "I 1603", "I 1701", "I 1703", "I 1801", "I 1803", "I 1901", "I 1903",
+			"delete", "delete", "delete", "delete" };
 
 	public static final String[] APT_NAMES_EVEN = { "A G2", "A G4", "A 102", "A 104", "A 202", "A 204", "A 302",
 			"A 304", "A 402", "A 404", "A 502", "A 504", "A 602", "A 604", "A 702", "A 704", "A 802", "A 804", "A 902",
@@ -385,6 +384,7 @@ public class Main2 {
 			"H 1802", "H 1804", "H 1902", "H 1904", "I G2", "I G4", "I 102", "I 104", "I 202", "I 204", "I 302",
 			"I 304", "I 402", "I 404", "I 502", "I 504", "I 602", "I 604", "I 702", "I 704", "I 802", "I 804", "I 902",
 			"I 904", "I 1002", "I 1004", "I 1102", "I 1104", "I 1202", "I 1204", "I 1302", "I 1304", "I 1402", "I 1404",
-			"I 1502", "I 1504", "I 1602", "I 1604", "I 1702", "I 1704", "I 1802", "I 1804", "I 1902", "I 1904" ,"delete","delete","delete","delete"};
+			"I 1502", "I 1504", "I 1602", "I 1604", "I 1702", "I 1704", "I 1802", "I 1804", "I 1902", "I 1904",
+			"delete", "delete", "delete", "delete" };
 
 }

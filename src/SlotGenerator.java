@@ -18,7 +18,7 @@ import java.util.List;
  * @since March-29-2020
  *
  */
-public class Main {
+public class SlotGenerator {
 
 	// Considering all unit irrespective of vacant or not.
 	public static final int TOTAL_APARTMENTS = 720;
@@ -136,18 +136,7 @@ public class Main {
 		Arrays.sort(day6, Comparator.comparingInt(a -> a[0]));
 		Arrays.sort(day7, Comparator.comparingInt(a -> a[0]));
 
-		/*
-		 * // Step 3 - Print Data for mathematical validation for (int unit = 0; unit <
-		 * TOTAL_APARTMENTS; unit++) { // 20 String line; line = day1[unit][0] + ";" +
-		 * day1[unit][1] + ";"; line = line + day2[unit][1] + ";"; line = line +
-		 * day3[unit][1] + ";"; line = line + day4[unit][1] + ";"; line = line +
-		 * day5[unit][1] + ";"; line = line + day6[unit][1] + ";"; line = line +
-		 * day7[unit][1] + ";"; System.out.println(line);
-		 * 
-		 * }
-		 */
-
-		// Step 4 - Print Data for distribution
+		// Step 3 - Print Data for distribution
 		System.out.println("APT,day1,day2,day3,day4,day5,day6,day7");
 		for (int unit = 0; unit < TOTAL_APARTMENTS; unit++) { // 20
 			String line;
@@ -250,10 +239,11 @@ public class Main {
 		for (int i = 1; i <= 720; i++) {
 			apartments[i - 1] = Integer.valueOf(i);
 		}
-		List<Integer> intList = Arrays.asList(apartments);
-		Collections.shuffle(intList);
-		intList.toArray(apartments);
-		apartments = intList.toArray(apartments);
+		// List<Integer> intList = Arrays.asList(apartments);
+		// Collections.shuffle(intList);
+		// intList.toArray(apartments);
+		// apartments = intList.toArray(apartments);
+		apartments = shuffle(apartments);
 
 		for (int i = 1; i <= 180; i++) {
 			apartments_g1[i - 1] = apartments[i - 1];

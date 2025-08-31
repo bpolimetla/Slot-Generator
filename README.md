@@ -1,30 +1,43 @@
-# Slot Generator for Apartment
+# Slot Generator for Apartment — COVID-Safe Grocery Scheduling
 
 ## Problem Statement
-We are living in apartment community with small grocery shop.  
-Total apartments 720  
-Grocery shop opens from 7 AM to 5 PM.  
-Every apartment should get a slot to do shopping  
-Each person can shop only for Rs.1000  
-Add/modify constraints as required  
+During COVID-19, a 720-apartment community required a fair, low-contact system for accessing the on-site grocery shop. The **Slot Generator** provides each flat with a **30-minute** entry window between **07:00 and 17:00**. Residents are allowed to queue **only within their assigned slot**.
 
-## Assumptions
-Assuming 50% or less people will come for shopping  
-If more people will show up, first come first serve basis  
-Each slot is 30 minutes. Residents can enter the line within the given slot.  
+## Assumptions & Rules
+- Expect **≤ 50%** of residents to shop on any given day. If turnout exceeds this, customers are admitted on a **first-come, first-served** basis within their slot.  
+- Parameters such as shop hours, slot length, and turnout assumptions should be **easily configurable**.  
+- Output should generate a **CSV-ready schedule** (with placeholders like `day1`, `day2` that can be replaced with actual dates).  
 
-## How to Run the code?
-People can modify and run the code in online editors without local IDE/environment setup  
-Copy paste code and run online [https://www.onlinegdb.com/online_java_compiler](https://www.onlinegdb.com/onlinejavacompiler)  
- 
-## TODO
-This code was not optimized and parameterized  
-Coding standards were not followed
+## Notes
+- The initial version is a simple, **non-optimized** Java implementation.  
+- Code can be run in an online editor (e.g., **OnlineGDB**) by copy-paste execution.  
+
+---
+
+# Project Guide
+
+## How to Run the Code
+This project requires no local IDE setup.  
+
+1. Copy the Java source code.  
+2. Open **OnlineGDB**: <https://www.onlinegdb.com/online_java_compiler>  
+3. Paste the code, press **Run**, and view the console output.  
 
 ## Result
-Copy paste result to .csv file  
-Open in excel and format  
-Change day1,day2 to required dates
+- Copy the console output into a **.csv** file.  
+- Open it in **Excel** or another spreadsheet tool for formatting.  
+- Replace `day1`, `day2`, … with actual **calendar dates**.  
+
+## TODO
+- Parameterize shop hours, slot duration, and capacity assumptions.  
+- Improve coding standards and documentation.  
+- Add input validation and error handling.  
+- Provide unit tests and example CSV outputs.  
+
+## Author
+**Bhavani Polimetla**  
+Date: March 2020  
 
 ## License
-Apache License 2.0  
+This project is licensed under the **Apache License 2.0**.  
+See the `LICENSE` file or <https://www.apache.org/licenses/LICENSE-2.0>.  
