@@ -17,11 +17,7 @@ During COVID-19, a 720-apartment community required a fair, low-contact system f
 
 ---
 
----
-
-🚀
-
-# Project Guide
+# 🚀 Project Guide
 
 ## ▶️ How to Run the Code
 
