@@ -42,8 +42,8 @@ This project requires no local IDE setup.
 
 ## 👤 Author
 
-**Bhavani Polimetla**
-Date: March 2020
+**Bhavani Polimetla**  
+Date: March 2020  
 
 ## 📄 License
 
